@@ -1,0 +1,11 @@
+release/loginscreen.o
+release/main.o
+release/homescreen.o
+release/orderscreen.o
+release/productsscreen.o
+release/signupscreen.o
+release/moc_homescreen.o
+release/moc_loginscreen.o
+release/moc_orderscreen.o
+release/moc_productsscreen.o
+release/moc_signupscreen.o
