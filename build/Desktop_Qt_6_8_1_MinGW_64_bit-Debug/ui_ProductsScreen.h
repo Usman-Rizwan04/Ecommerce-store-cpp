@@ -12,6 +12,7 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
+#include <QtWidgets/QFrame>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QPushButton>
@@ -22,17 +23,31 @@ QT_BEGIN_NAMESPACE
 class Ui_ProductsScreen
 {
 public:
-    QTableWidget *productsTable;
+    QFrame *frame;
     QPushButton *cartButton;
-    QPushButton *backButton;
+    QTableWidget *productsTable;
     QLabel *label;
+    QFrame *frame_2;
+    QLabel *label_2;
+    QPushButton *backButton;
 
     void setupUi(QDialog *ProductsScreen)
     {
         if (ProductsScreen->objectName().isEmpty())
             ProductsScreen->setObjectName("ProductsScreen");
-        ProductsScreen->resize(824, 427);
-        productsTable = new QTableWidget(ProductsScreen);
+        ProductsScreen->resize(947, 553);
+        frame = new QFrame(ProductsScreen);
+        frame->setObjectName("frame");
+        frame->setGeometry(QRect(0, 0, 951, 561));
+        frame->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
+        frame->setFrameShape(QFrame::Shape::StyledPanel);
+        frame->setFrameShadow(QFrame::Shadow::Raised);
+        cartButton = new QPushButton(frame);
+        cartButton->setObjectName("cartButton");
+        cartButton->setGeometry(QRect(780, 470, 91, 31));
+        cartButton->setStyleSheet(QString::fromUtf8("color: rgb(8, 8, 8);\n"
+"background-color: rgb(200, 223, 255);"));
+        productsTable = new QTableWidget(frame);
         if (productsTable->columnCount() < 6)
             productsTable->setColumnCount(6);
         QTableWidgetItem *__qtablewidgetitem = new QTableWidgetItem();
@@ -49,26 +64,41 @@ public:
         QTableWidgetItem *__qtablewidgetitem5 = new QTableWidgetItem();
         productsTable->setHorizontalHeaderItem(5, __qtablewidgetitem5);
         productsTable->setObjectName("productsTable");
-        productsTable->setGeometry(QRect(20, 70, 681, 261));
+        productsTable->setGeometry(QRect(130, 150, 681, 261));
+        productsTable->setStyleSheet(QString::fromUtf8("color: rgb(7, 7, 7);"));
         productsTable->setEditTriggers(QAbstractItemView::EditTrigger::NoEditTriggers);
         productsTable->setAlternatingRowColors(false);
         productsTable->setSelectionMode(QAbstractItemView::SelectionMode::MultiSelection);
         productsTable->setSelectionBehavior(QAbstractItemView::SelectionBehavior::SelectRows);
         productsTable->horizontalHeader()->setMinimumSectionSize(28);
         productsTable->horizontalHeader()->setDefaultSectionSize(112);
-        cartButton = new QPushButton(ProductsScreen);
-        cartButton->setObjectName("cartButton");
-        cartButton->setGeometry(QRect(530, 370, 80, 24));
-        backButton = new QPushButton(ProductsScreen);
-        backButton->setObjectName("backButton");
-        backButton->setGeometry(QRect(630, 370, 80, 24));
-        label = new QLabel(ProductsScreen);
+        label = new QLabel(frame);
         label->setObjectName("label");
-        label->setGeometry(QRect(20, 50, 281, 16));
+        label->setGeometry(QRect(130, 130, 281, 16));
         QFont font;
         font.setBold(false);
         label->setFont(font);
         label->setStyleSheet(QString::fromUtf8("color: rgb(255, 0, 0);"));
+        frame_2 = new QFrame(frame);
+        frame_2->setObjectName("frame_2");
+        frame_2->setGeometry(QRect(0, 0, 951, 80));
+        frame_2->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 36, 89);"));
+        frame_2->setFrameShape(QFrame::Shape::StyledPanel);
+        frame_2->setFrameShadow(QFrame::Shadow::Raised);
+        label_2 = new QLabel(frame_2);
+        label_2->setObjectName("label_2");
+        label_2->setGeometry(QRect(30, 20, 171, 41));
+        QFont font1;
+        font1.setFamilies({QString::fromUtf8("Rockwell")});
+        font1.setPointSize(28);
+        font1.setBold(true);
+        label_2->setFont(font1);
+        label_2->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        backButton = new QPushButton(frame_2);
+        backButton->setObjectName("backButton");
+        backButton->setGeometry(QRect(830, 30, 81, 31));
+        backButton->setStyleSheet(QString::fromUtf8("color: rgb(8, 8, 8);\n"
+"background-color: rgb(200, 223, 255);"));
 
         retranslateUi(ProductsScreen);
 
@@ -78,6 +108,7 @@ public:
     void retranslateUi(QDialog *ProductsScreen)
     {
         ProductsScreen->setWindowTitle(QCoreApplication::translate("ProductsScreen", "Dialog", nullptr));
+        cartButton->setText(QCoreApplication::translate("ProductsScreen", "Add to cart", nullptr));
         QTableWidgetItem *___qtablewidgetitem = productsTable->horizontalHeaderItem(1);
         ___qtablewidgetitem->setText(QCoreApplication::translate("ProductsScreen", "Product Name", nullptr));
         QTableWidgetItem *___qtablewidgetitem1 = productsTable->horizontalHeaderItem(2);
@@ -88,9 +119,9 @@ public:
         ___qtablewidgetitem3->setText(QCoreApplication::translate("ProductsScreen", "Price", nullptr));
         QTableWidgetItem *___qtablewidgetitem4 = productsTable->horizontalHeaderItem(5);
         ___qtablewidgetitem4->setText(QCoreApplication::translate("ProductsScreen", "Quantity", nullptr));
-        cartButton->setText(QCoreApplication::translate("ProductsScreen", "Add to cart", nullptr));
-        backButton->setText(QCoreApplication::translate("ProductsScreen", "Back", nullptr));
         label->setText(QCoreApplication::translate("ProductsScreen", "*Only the selected products will be added to the cart.", nullptr));
+        label_2->setText(QCoreApplication::translate("ProductsScreen", "Products", nullptr));
+        backButton->setText(QCoreApplication::translate("ProductsScreen", "Back", nullptr));
     } // retranslateUi
 
 };

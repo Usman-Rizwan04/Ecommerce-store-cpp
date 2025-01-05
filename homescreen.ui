@@ -6,71 +6,145 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>564</width>
-    <height>292</height>
+    <width>678</width>
+    <height>538</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>HomeScreen</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="label">
+   <widget class="QFrame" name="frame">
     <property name="geometry">
      <rect>
-      <x>130</x>
+      <x>0</x>
       <y>0</y>
-      <width>321</width>
-      <height>41</height>
+      <width>681</width>
+      <height>541</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>20</pointsize>
-      <bold>true</bold>
-     </font>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
-    <property name="text">
-     <string>Welcome To TShirt Store</string>
+    <property name="frameShape">
+     <enum>QFrame::Shape::StyledPanel</enum>
     </property>
-   </widget>
-   <widget class="QPushButton" name="loginButton">
-    <property name="geometry">
-     <rect>
-      <x>90</x>
-      <y>130</y>
-      <width>80</width>
-      <height>24</height>
-     </rect>
+    <property name="frameShadow">
+     <enum>QFrame::Shadow::Raised</enum>
     </property>
-    <property name="text">
-     <string>Login</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="signupButton">
-    <property name="geometry">
-     <rect>
-      <x>230</x>
-      <y>130</y>
-      <width>80</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Signup</string>
-    </property>
+    <widget class="QLabel" name="lbl_image">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>160</y>
+       <width>331</width>
+       <height>221</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>C:/Users/CC/Downloads/—Pngtree—plain t-shirt with a lot_4888759.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="loginButton">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>440</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(8, 8, 8);
+background-color: rgb(200, 223, 255);</string>
+     </property>
+     <property name="text">
+      <string>LOGIN</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="signupButton">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>440</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(8, 8, 8);
+background-color: rgb(200, 223, 255);</string>
+     </property>
+     <property name="text">
+      <string>SIGNUP</string>
+     </property>
+    </widget>
+    <widget class="QFrame" name="frame_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>681</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(0, 36, 89);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Shape::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Shadow::Raised</enum>
+     </property>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>10</y>
+        <width>601</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Rockwell</family>
+        <pointsize>36</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Welcome To T-Shirt Store</string>
+      </property>
+     </widget>
+    </widget>
+    <zorder>frame_2</zorder>
+    <zorder>lbl_image</zorder>
+    <zorder>loginButton</zorder>
+    <zorder>signupButton</zorder>
    </widget>
   </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>564</width>
-     <height>21</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
  <connections/>
