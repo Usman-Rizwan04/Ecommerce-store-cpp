@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>947</width>
-    <height>553</height>
+    <width>1161</width>
+    <height>711</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -18,8 +18,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>951</width>
-     <height>561</height>
+     <width>1161</width>
+     <height>711</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -34,11 +34,17 @@
    <widget class="QPushButton" name="cartButton">
     <property name="geometry">
      <rect>
-      <x>780</x>
-      <y>470</y>
-      <width>91</width>
-      <height>31</height>
+      <x>950</x>
+      <y>610</y>
+      <width>121</width>
+      <height>41</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <bold>false</bold>
+     </font>
     </property>
     <property name="styleSheet">
      <string notr="true">color: rgb(8, 8, 8);
@@ -51,10 +57,10 @@ background-color: rgb(200, 223, 255);</string>
    <widget class="QTableWidget" name="productsTable">
     <property name="geometry">
      <rect>
-      <x>130</x>
-      <y>150</y>
+      <x>240</x>
+      <y>160</y>
       <width>681</width>
-      <height>261</height>
+      <height>411</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -112,8 +118,8 @@ background-color: rgb(200, 223, 255);</string>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>130</x>
-      <y>130</y>
+      <x>240</x>
+      <y>140</y>
       <width>281</width>
       <height>16</height>
      </rect>
@@ -135,7 +141,7 @@ background-color: rgb(200, 223, 255);</string>
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>951</width>
+      <width>1161</width>
       <height>80</height>
      </rect>
     </property>
@@ -151,7 +157,7 @@ background-color: rgb(200, 223, 255);</string>
     <widget class="QLabel" name="label_2">
      <property name="geometry">
       <rect>
-       <x>30</x>
+       <x>90</x>
        <y>20</y>
        <width>171</width>
        <height>41</height>
@@ -174,7 +180,7 @@ background-color: rgb(200, 223, 255);</string>
     <widget class="QPushButton" name="backButton">
      <property name="geometry">
       <rect>
-       <x>830</x>
+       <x>1050</x>
        <y>30</y>
        <width>81</width>
        <height>31</height>
@@ -186,6 +192,25 @@ background-color: rgb(200, 223, 255);</string>
      </property>
      <property name="text">
       <string>Back</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>10</y>
+       <width>51</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>C:/Users/CC/Downloads/pngfind.com-package-png-1312918.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
      </property>
     </widget>
    </widget>

@@ -36,7 +36,7 @@ public:
     {
         if (LoginScreen->objectName().isEmpty())
             LoginScreen->setObjectName("LoginScreen");
-        LoginScreen->resize(406, 336);
+        LoginScreen->resize(427, 359);
         frame = new QFrame(LoginScreen);
         frame->setObjectName("frame");
         frame->setGeometry(QRect(0, 0, 431, 361));

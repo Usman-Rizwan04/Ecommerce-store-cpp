@@ -30,21 +30,26 @@ public:
     QFrame *frame_2;
     QLabel *label_2;
     QPushButton *backButton;
+    QLabel *label_3;
 
     void setupUi(QDialog *ProductsScreen)
     {
         if (ProductsScreen->objectName().isEmpty())
             ProductsScreen->setObjectName("ProductsScreen");
-        ProductsScreen->resize(947, 553);
+        ProductsScreen->resize(1161, 711);
         frame = new QFrame(ProductsScreen);
         frame->setObjectName("frame");
-        frame->setGeometry(QRect(0, 0, 951, 561));
+        frame->setGeometry(QRect(0, 0, 1161, 711));
         frame->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
         frame->setFrameShape(QFrame::Shape::StyledPanel);
         frame->setFrameShadow(QFrame::Shadow::Raised);
         cartButton = new QPushButton(frame);
         cartButton->setObjectName("cartButton");
-        cartButton->setGeometry(QRect(780, 470, 91, 31));
+        cartButton->setGeometry(QRect(950, 610, 121, 41));
+        QFont font;
+        font.setPointSize(11);
+        font.setBold(false);
+        cartButton->setFont(font);
         cartButton->setStyleSheet(QString::fromUtf8("color: rgb(8, 8, 8);\n"
 "background-color: rgb(200, 223, 255);"));
         productsTable = new QTableWidget(frame);
@@ -64,7 +69,7 @@ public:
         QTableWidgetItem *__qtablewidgetitem5 = new QTableWidgetItem();
         productsTable->setHorizontalHeaderItem(5, __qtablewidgetitem5);
         productsTable->setObjectName("productsTable");
-        productsTable->setGeometry(QRect(130, 150, 681, 261));
+        productsTable->setGeometry(QRect(130, 150, 681, 411));
         productsTable->setStyleSheet(QString::fromUtf8("color: rgb(7, 7, 7);"));
         productsTable->setEditTriggers(QAbstractItemView::EditTrigger::NoEditTriggers);
         productsTable->setAlternatingRowColors(false);
@@ -75,30 +80,35 @@ public:
         label = new QLabel(frame);
         label->setObjectName("label");
         label->setGeometry(QRect(130, 130, 281, 16));
-        QFont font;
-        font.setBold(false);
-        label->setFont(font);
+        QFont font1;
+        font1.setBold(false);
+        label->setFont(font1);
         label->setStyleSheet(QString::fromUtf8("color: rgb(255, 0, 0);"));
         frame_2 = new QFrame(frame);
         frame_2->setObjectName("frame_2");
-        frame_2->setGeometry(QRect(0, 0, 951, 80));
+        frame_2->setGeometry(QRect(0, 0, 1161, 80));
         frame_2->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 36, 89);"));
         frame_2->setFrameShape(QFrame::Shape::StyledPanel);
         frame_2->setFrameShadow(QFrame::Shadow::Raised);
         label_2 = new QLabel(frame_2);
         label_2->setObjectName("label_2");
-        label_2->setGeometry(QRect(30, 20, 171, 41));
-        QFont font1;
-        font1.setFamilies({QString::fromUtf8("Rockwell")});
-        font1.setPointSize(28);
-        font1.setBold(true);
-        label_2->setFont(font1);
+        label_2->setGeometry(QRect(90, 20, 171, 41));
+        QFont font2;
+        font2.setFamilies({QString::fromUtf8("Rockwell")});
+        font2.setPointSize(28);
+        font2.setBold(true);
+        label_2->setFont(font2);
         label_2->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
         backButton = new QPushButton(frame_2);
         backButton->setObjectName("backButton");
-        backButton->setGeometry(QRect(830, 30, 81, 31));
+        backButton->setGeometry(QRect(1050, 30, 81, 31));
         backButton->setStyleSheet(QString::fromUtf8("color: rgb(8, 8, 8);\n"
 "background-color: rgb(200, 223, 255);"));
+        label_3 = new QLabel(frame_2);
+        label_3->setObjectName("label_3");
+        label_3->setGeometry(QRect(20, 10, 51, 61));
+        label_3->setPixmap(QPixmap(QString::fromUtf8("C:/Users/CC/Downloads/pngfind.com-package-png-1312918.png")));
+        label_3->setScaledContents(true);
 
         retranslateUi(ProductsScreen);
 
@@ -122,6 +132,7 @@ public:
         label->setText(QCoreApplication::translate("ProductsScreen", "*Only the selected products will be added to the cart.", nullptr));
         label_2->setText(QCoreApplication::translate("ProductsScreen", "Products", nullptr));
         backButton->setText(QCoreApplication::translate("ProductsScreen", "Back", nullptr));
+        label_3->setText(QString());
     } // retranslateUi
 
 };
