@@ -1547,9 +1547,6 @@ release/loginscreen.o: ../../loginscreen.cpp ../../loginscreen.h \
 		F:/QT/6.8.1/mingw_64/include/QtGui/qpen.h \
 		F:/QT/6.8.1/mingw_64/include/QtGui/qtextoption.h \
 		ui_LoginScreen.h \
-		F:/QT/6.8.1/mingw_64/include/QtCore/QVariant \
-		F:/QT/6.8.1/mingw_64/include/QtWidgets/QApplication \
-		F:/QT/6.8.1/mingw_64/include/QtWidgets/qapplication.h \
 		../../homescreen.h \
 		../../signupscreen.h \
 		F:/QT/6.8.1/mingw_64/include/QtWidgets/QMainWindow \
@@ -1567,6 +1564,7 @@ release/loginscreen.o: ../../loginscreen.cpp ../../loginscreen.h \
 		F:/QT/6.8.1/mingw_64/include/QtCore/QSharedDataPointer \
 		F:/QT/6.8.1/mingw_64/include/QtCore/QString \
 		F:/QT/6.8.1/mingw_64/include/QtCore/QUrl \
+		F:/QT/6.8.1/mingw_64/include/QtCore/QVariant \
 		F:/QT/6.8.1/mingw_64/include/QtCore/q26numeric.h \
 		F:/QT/6.8.1/mingw_64/include/QtNetwork/QSslConfiguration \
 		F:/QT/6.8.1/mingw_64/include/QtNetwork/qsslconfiguration.h \
@@ -2072,19 +2070,6 @@ release/homescreen.o: ../../homescreen.cpp ../../HomeScreen.h \
 		../../signupscreen.h \
 		F:/QT/6.8.1/mingw_64/include/QtWidgets/QMainWindow \
 		F:/QT/6.8.1/mingw_64/include/QtWidgets/qmainwindow.h \
-		ui_HomeScreen.h \
-		F:/QT/6.8.1/mingw_64/include/QtCore/QVariant \
-		F:/QT/6.8.1/mingw_64/include/QtWidgets/QApplication \
-		F:/QT/6.8.1/mingw_64/include/QtWidgets/qapplication.h \
-		F:/QT/6.8.1/mingw_64/include/QtWidgets/QLabel \
-		F:/QT/6.8.1/mingw_64/include/QtWidgets/qlabel.h \
-		F:/QT/6.8.1/mingw_64/include/QtGui/qpicture.h \
-		F:/QT/6.8.1/mingw_64/include/QtWidgets/QMenuBar \
-		F:/QT/6.8.1/mingw_64/include/QtWidgets/qmenubar.h \
-		F:/QT/6.8.1/mingw_64/include/QtWidgets/qmenu.h \
-		F:/QT/6.8.1/mingw_64/include/QtWidgets/QStatusBar \
-		F:/QT/6.8.1/mingw_64/include/QtWidgets/qstatusbar.h \
-		F:/QT/6.8.1/mingw_64/include/QtWidgets/QWidget \
 		F:/QT/6.8.1/mingw_64/include/QtWidgets/QStackedWidget \
 		F:/QT/6.8.1/mingw_64/include/QtWidgets/qstackedwidget.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\homescreen.o ..\..\homescreen.cpp
@@ -2311,24 +2296,6 @@ release/orderscreen.o: ../../orderscreen.cpp ../../orderscreen.h \
 		F:/QT/6.8.1/mingw_64/include/QtCore/qcalendar.h \
 		F:/QT/6.8.1/mingw_64/include/QtCore/quuid.h \
 		ui_OrderScreen.h \
-		F:/QT/6.8.1/mingw_64/include/QtCore/QVariant \
-		F:/QT/6.8.1/mingw_64/include/QtWidgets/QApplication \
-		F:/QT/6.8.1/mingw_64/include/QtWidgets/qapplication.h \
-		F:/QT/6.8.1/mingw_64/include/QtWidgets/QHeaderView \
-		F:/QT/6.8.1/mingw_64/include/QtWidgets/qheaderview.h \
-		F:/QT/6.8.1/mingw_64/include/QtWidgets/QLabel \
-		F:/QT/6.8.1/mingw_64/include/QtWidgets/qlabel.h \
-		F:/QT/6.8.1/mingw_64/include/QtGui/qpicture.h \
-		F:/QT/6.8.1/mingw_64/include/QtGui/qtextdocument.h \
-		F:/QT/6.8.1/mingw_64/include/QtWidgets/QLineEdit \
-		F:/QT/6.8.1/mingw_64/include/QtWidgets/qlineedit.h \
-		F:/QT/6.8.1/mingw_64/include/QtGui/qtextcursor.h \
-		F:/QT/6.8.1/mingw_64/include/QtGui/qtextformat.h \
-		F:/QT/6.8.1/mingw_64/include/QtGui/qpen.h \
-		F:/QT/6.8.1/mingw_64/include/QtGui/qtextoption.h \
-		F:/QT/6.8.1/mingw_64/include/QtWidgets/QTableWidget \
-		F:/QT/6.8.1/mingw_64/include/QtWidgets/qtablewidget.h \
-		F:/QT/6.8.1/mingw_64/include/QtWidgets/qtableview.h \
 		F:/QT/6.8.1/mingw_64/include/QtWidgets/QWidget \
 		F:/QT/6.8.1/mingw_64/include/QtNetwork/QNetworkAccessManager \
 		F:/QT/6.8.1/mingw_64/include/QtNetwork/qnetworkaccessmanager.h \
@@ -2340,6 +2307,7 @@ release/orderscreen.o: ../../orderscreen.cpp ../../orderscreen.h \
 		F:/QT/6.8.1/mingw_64/include/QtCore/QSharedDataPointer \
 		F:/QT/6.8.1/mingw_64/include/QtCore/QString \
 		F:/QT/6.8.1/mingw_64/include/QtCore/QUrl \
+		F:/QT/6.8.1/mingw_64/include/QtCore/QVariant \
 		F:/QT/6.8.1/mingw_64/include/QtCore/q26numeric.h \
 		F:/QT/6.8.1/mingw_64/include/QtNetwork/QSslConfiguration \
 		F:/QT/6.8.1/mingw_64/include/QtNetwork/qsslconfiguration.h \
@@ -2368,6 +2336,8 @@ release/orderscreen.o: ../../orderscreen.cpp ../../orderscreen.h \
 		F:/QT/6.8.1/mingw_64/include/QtCore/QJsonArray \
 		F:/QT/6.8.1/mingw_64/include/QtCore/qjsonarray.h \
 		F:/QT/6.8.1/mingw_64/include/QtWidgets/QTableWidgetItem \
+		F:/QT/6.8.1/mingw_64/include/QtWidgets/qtablewidget.h \
+		F:/QT/6.8.1/mingw_64/include/QtWidgets/qtableview.h \
 		F:/QT/6.8.1/mingw_64/include/QtCore/QSettings \
 		F:/QT/6.8.1/mingw_64/include/QtCore/qsettings.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\orderscreen.o ..\..\orderscreen.cpp
@@ -2599,23 +2569,12 @@ release/productsscreen.o: ../../productsscreen.cpp ../../productsscreen.h \
 		F:/QT/6.8.1/mingw_64/include/QtCore/qjsonarray.h \
 		F:/QT/6.8.1/mingw_64/include/QtCore/QSet \
 		ui_ProductsScreen.h \
-		F:/QT/6.8.1/mingw_64/include/QtCore/QVariant \
-		F:/QT/6.8.1/mingw_64/include/QtWidgets/QApplication \
-		F:/QT/6.8.1/mingw_64/include/QtWidgets/qapplication.h \
-		F:/QT/6.8.1/mingw_64/include/QtWidgets/QHeaderView \
-		F:/QT/6.8.1/mingw_64/include/QtWidgets/qheaderview.h \
-		F:/QT/6.8.1/mingw_64/include/QtWidgets/QLabel \
-		F:/QT/6.8.1/mingw_64/include/QtWidgets/qlabel.h \
-		F:/QT/6.8.1/mingw_64/include/QtGui/qpicture.h \
-		F:/QT/6.8.1/mingw_64/include/QtGui/qtextdocument.h \
-		F:/QT/6.8.1/mingw_64/include/QtWidgets/QTableWidget \
-		F:/QT/6.8.1/mingw_64/include/QtWidgets/qtablewidget.h \
-		F:/QT/6.8.1/mingw_64/include/QtWidgets/qtableview.h \
 		../../homescreen.h \
 		../../loginscreen.h \
 		F:/QT/6.8.1/mingw_64/include/QtWidgets/QLineEdit \
 		F:/QT/6.8.1/mingw_64/include/QtWidgets/qlineedit.h \
 		F:/QT/6.8.1/mingw_64/include/QtGui/qtextcursor.h \
+		F:/QT/6.8.1/mingw_64/include/QtGui/qtextdocument.h \
 		F:/QT/6.8.1/mingw_64/include/QtGui/qtextformat.h \
 		F:/QT/6.8.1/mingw_64/include/QtGui/qpen.h \
 		F:/QT/6.8.1/mingw_64/include/QtGui/qtextoption.h \
@@ -2635,6 +2594,7 @@ release/productsscreen.o: ../../productsscreen.cpp ../../productsscreen.h \
 		F:/QT/6.8.1/mingw_64/include/QtCore/QSharedDataPointer \
 		F:/QT/6.8.1/mingw_64/include/QtCore/QString \
 		F:/QT/6.8.1/mingw_64/include/QtCore/QUrl \
+		F:/QT/6.8.1/mingw_64/include/QtCore/QVariant \
 		F:/QT/6.8.1/mingw_64/include/QtCore/q26numeric.h \
 		F:/QT/6.8.1/mingw_64/include/QtNetwork/QSslConfiguration \
 		F:/QT/6.8.1/mingw_64/include/QtNetwork/qsslconfiguration.h \
@@ -2864,12 +2824,6 @@ release/signupscreen.o: ../../signupscreen.cpp ../../signupscreen.h \
 		F:/QT/6.8.1/mingw_64/include/QtWidgets/qpushbutton.h \
 		F:/QT/6.8.1/mingw_64/include/QtWidgets/qabstractbutton.h \
 		ui_SignupScreen.h \
-		F:/QT/6.8.1/mingw_64/include/QtCore/QVariant \
-		F:/QT/6.8.1/mingw_64/include/QtWidgets/QApplication \
-		F:/QT/6.8.1/mingw_64/include/QtWidgets/qapplication.h \
-		F:/QT/6.8.1/mingw_64/include/QtWidgets/QLabel \
-		F:/QT/6.8.1/mingw_64/include/QtWidgets/qlabel.h \
-		F:/QT/6.8.1/mingw_64/include/QtGui/qpicture.h \
 		../../homescreen.h \
 		../../loginscreen.h \
 		../../productsscreen.h \
@@ -2919,6 +2873,7 @@ release/signupscreen.o: ../../signupscreen.cpp ../../signupscreen.h \
 		F:/QT/6.8.1/mingw_64/include/QtCore/QSharedDataPointer \
 		F:/QT/6.8.1/mingw_64/include/QtCore/QString \
 		F:/QT/6.8.1/mingw_64/include/QtCore/QUrl \
+		F:/QT/6.8.1/mingw_64/include/QtCore/QVariant \
 		F:/QT/6.8.1/mingw_64/include/QtCore/q26numeric.h \
 		F:/QT/6.8.1/mingw_64/include/QtNetwork/QSslConfiguration \
 		F:/QT/6.8.1/mingw_64/include/QtNetwork/qsslconfiguration.h \

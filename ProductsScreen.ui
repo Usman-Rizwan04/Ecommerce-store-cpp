@@ -57,9 +57,9 @@ background-color: rgb(200, 223, 255);</string>
    <widget class="QTableWidget" name="productsTable">
     <property name="geometry">
      <rect>
-      <x>240</x>
+      <x>210</x>
       <y>160</y>
-      <width>681</width>
+      <width>711</width>
       <height>411</height>
      </rect>
     </property>

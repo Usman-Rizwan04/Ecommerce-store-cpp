@@ -69,7 +69,7 @@ public:
         QTableWidgetItem *__qtablewidgetitem5 = new QTableWidgetItem();
         productsTable->setHorizontalHeaderItem(5, __qtablewidgetitem5);
         productsTable->setObjectName("productsTable");
-        productsTable->setGeometry(QRect(130, 150, 681, 411));
+        productsTable->setGeometry(QRect(210, 160, 711, 411));
         productsTable->setStyleSheet(QString::fromUtf8("color: rgb(7, 7, 7);"));
         productsTable->setEditTriggers(QAbstractItemView::EditTrigger::NoEditTriggers);
         productsTable->setAlternatingRowColors(false);
@@ -79,7 +79,7 @@ public:
         productsTable->horizontalHeader()->setDefaultSectionSize(112);
         label = new QLabel(frame);
         label->setObjectName("label");
-        label->setGeometry(QRect(130, 130, 281, 16));
+        label->setGeometry(QRect(240, 140, 281, 16));
         QFont font1;
         font1.setBold(false);
         label->setFont(font1);

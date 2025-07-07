@@ -79,7 +79,7 @@ public:
         QTableWidgetItem *__qtablewidgetitem4 = new QTableWidgetItem();
         orderTable->setHorizontalHeaderItem(4, __qtablewidgetitem4);
         orderTable->setObjectName("orderTable");
-        orderTable->setGeometry(QRect(130, 150, 881, 221));
+        orderTable->setGeometry(QRect(280, 170, 601, 221));
         orderTable->setStyleSheet(QString::fromUtf8("color: rgb(0, 0, 0);"));
         orderTable->horizontalHeader()->setDefaultSectionSize(118);
         addressInput = new QLineEdit(frame);
